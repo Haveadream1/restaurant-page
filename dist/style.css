@@ -1,11 +1,11 @@
 body {
     font-family: roboto;
-    background-color: rgba(242, 184, 164, 0.42);
     margin:0; 
     padding:0;
 }
 
 .grid-home {
+    background-color: rgba(242, 184, 164, 0.42);
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 100px 625px 180px;
@@ -18,7 +18,8 @@ body {
     grid-row: 2;
     min-width: 350px;
 }
-h1 {
+.title-home,
+.title-menu {
     font-size: 40px;
     font-weight: lighter;
     margin-bottom: 0;
@@ -61,7 +62,9 @@ h1 {
     width: 210px;
     height: 210px;
 }
+/*incline it*/
 .arrow {
+    color: black;
     position: static;
     width: 100%;
     height: 180px; 
@@ -72,4 +75,90 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* Menu style*/
+.menu {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 120px 600px;
+    background: rgba(45, 96, 114, 0.81);
+}
+/*padding: 20px;*/
+.title-menu {
+    color: #F4DBD3;
+    padding: 20px;
+}
+
+.image-menu {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.image-4 {
+    background-color: green;
+    grid-row: 2;
+    display: flex;
+    justify-content: flex-end;
+    width: 320px;
+    height: 320px;
+}
+.image-5 {
+    background-color: blue;
+    grid-row: 2;
+    width: 280px;
+    height: 150px;
+}
+.image-6 {
+    background-color: red;
+    grid-row: 2;
+    width: 350px;
+    height: 200px;
+}
+.image-7 {
+    background-color: red;
+    grid-column: 3;
+    grid-row: 1;
+    width: 350px;
+    height: 200px;
+}
+.image-4,
+.image-5,
+.image-6,
+.image-7 {
+    margin-left: 35px;
+    margin-right: 35px;
+    border-radius: 29px;
+}
+
+
+footer {
+    position: static;
+    width: 100%;
+    height: 180px; 
+    font-size: 30px;
+    padding: 0;
+    background: #F3D2B5;
+    color: #52767E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.align-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.title-footer{
+    color: white;
+    text-align: center;
+}
+.gmail,
+.phone-num,
+.address {
+    color: #52767E;
+
 }

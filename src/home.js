@@ -3,21 +3,18 @@ import runMenu from"./menu"
 const home = () => {
     let div = document.querySelector('#content');
 
-    let sectionGridHome = document.createElement('section');
-    sectionGridHome.classList.add('grid-home');
-    div.appendChild(sectionGridHome);
-
-    let backHome = document.createElement('section');
-    backHome.classList.add('back-home');
-    sectionGridHome.appendChild(backHome);
+    let sectionHome = document.createElement('section');
+    sectionHome.classList.add('grid-home');
+    div.appendChild(sectionHome);
 
     let sectionTitle = document.createElement('section');
     sectionTitle.classList.add('title');
-    sectionGridHome.appendChild(sectionTitle);
+    sectionHome.appendChild(sectionTitle);
     
-    let h1 = document.createElement('h1');
-    h1.textContent = 'Reserve your table for tonight';
-    sectionTitle.appendChild(h1);
+    let titleHome = document.createElement('h1');
+    titleHome.textContent = 'Reserve your table for tonight';
+    titleHome.classList.add('title-home');
+    sectionTitle.appendChild(titleHome);
 
     let seeMore = document.createElement('p');
     seeMore.classList.add('see-more');
@@ -27,7 +24,7 @@ const home = () => {
 
     let sectionTab = document.createElement('section');
     sectionTab.classList.add('tab');
-    sectionGridHome.appendChild(sectionTab);
+    sectionHome.appendChild(sectionTab);
 
     // button or link a
     let contact = document.createElement('button')
@@ -43,7 +40,7 @@ const home = () => {
 
     let sectionImage = document.createElement('section');
     sectionImage.classList.add('image');
-    sectionGridHome.appendChild(sectionImage);
+    sectionHome.appendChild(sectionImage);
 
     // change with image
     let image1 = document.createElement('section');
@@ -58,10 +55,9 @@ const home = () => {
     image3.classList.add('image-3');
     sectionImage.appendChild(image3);
 
-
     let sectionArrow = document.createElement('footer');
     sectionArrow.classList.add('arrow');
-    sectionGridHome.appendChild(sectionArrow);
+    sectionHome.appendChild(sectionArrow);
 
     let discover = document.createElement('p');
     discover.classList.add('discover');
@@ -75,9 +71,6 @@ const home = () => {
 
     // create each times not what we want
     discoverButton.addEventListener('click', runMenu);
-    if(discoverButton === active) {
-        sectionGridHome.remove.classList('grid-home');
-    }
 }
 
 export default home;

@@ -14,7 +14,7 @@ const menu = () => {
     sectionMenu.appendChild(titleMenu);
 
     let returnHome = document.createElement('img');
-    removeHome.src = imgHome;
+    returnHome.src = imgHome;
     returnHome.classList.add('return-home');
     sectionMenu.appendChild(returnHome);
 
@@ -28,7 +28,7 @@ const menu = () => {
     sectionMenu.appendChild(sectionImageMenu);
 
     let plate1 = document.createElement('p');
-    plate1.textContent = 'Pad Thai - 11$'
+    plate1.textContent = 'Pad Thai - 11$';
     plate1.classList.add('plate1');
     sectionImageMenu.appendChild(plate1);
 
@@ -38,17 +38,17 @@ const menu = () => {
     sectionImageMenu.appendChild(img1);*/
 
     let plate2 = document.createElement('p');
-    plate2.textContent = 'Korean BBQ - 15$'
+    plate2.textContent = 'Korean BBQ - 15$';
     plate2.classList.add('plate2');
     sectionImageMenu.appendChild(plate2);
 
     let plate3 = document.createElement('p');
-    plate3.textContent = 'Udon - 14$'
+    plate3.textContent = 'Udon - 14$';
     plate3.classList.add('plate3');
     sectionImageMenu.appendChild(plate3);
 
     let plate4 = document.createElement('p');
-    plate4.textContent = 'Pekin Duck - 18$'
+    plate4.textContent = 'Pekin Duck - 18$';
     plate4.classList.add('plate4');
     sectionImageMenu.appendChild(plate4);
 

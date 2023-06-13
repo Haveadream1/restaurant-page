@@ -1,4 +1,5 @@
 import runMenu from "./menu";
+import imgArrow from "../dist/images/Vector.svg"
 
 const home = () => {
     let div = document.querySelector('#content');
@@ -47,6 +48,7 @@ const home = () => {
     sectionArrow.appendChild(discover);
     
     let discoverButton = document.createElement('img');
+    discoverButton.src = imgArrow;
     discoverButton.classList.add('discover-button');
 
     sectionArrow.appendChild(discoverButton);

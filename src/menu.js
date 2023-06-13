@@ -1,4 +1,5 @@
 import runHome from "./home";
+import imgHome from "../dist/images/Vector\ \(1\).svg";
 
 const menu = () => {
     let div = document.querySelector('#content');
@@ -13,6 +14,7 @@ const menu = () => {
     sectionMenu.appendChild(titleMenu);
 
     let returnHome = document.createElement('img');
+    removeHome.src = imgHome;
     returnHome.classList.add('return-home');
     sectionMenu.appendChild(returnHome);
 

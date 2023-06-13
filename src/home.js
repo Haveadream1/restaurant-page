@@ -1,4 +1,4 @@
-import runMenu from"./menu"
+import runMenu from "./menu";
 
 const home = () => {
     let div = document.querySelector('#content');
@@ -21,37 +21,19 @@ const home = () => {
     seeMore.textContent = 'See more';
     sectionTitle.appendChild(seeMore);
 
-
-    let sectionTab = document.createElement('section');
-    sectionTab.classList.add('tab');
-    sectionHome.appendChild(sectionTab);
-
-    // button or link a
-    let contact = document.createElement('button')
-    contact.classList.add('contact');
-    contact.textContent = 'Contact';
-    sectionTab.appendChild(contact);
-
-    let times = document.createElement('p');
-    times.classList.add('times');
-    times.textContent = 'Opening Times';
-    sectionTab.appendChild(times);
-
-
     let sectionImage = document.createElement('section');
     sectionImage.classList.add('image');
     sectionHome.appendChild(sectionImage);
 
-    // change with image
-    let image1 = document.createElement('section');
+    let image1 = document.createElement('img');
     image1.classList.add('image-1');
     sectionImage.appendChild(image1);
 
-    let image2 = document.createElement('section');
+    let image2 = document.createElement('img');
     image2.classList.add('image-2');
     sectionImage.appendChild(image2);
 
-    let image3 = document.createElement('section');
+    let image3 = document.createElement('img');
     image3.classList.add('image-3');
     sectionImage.appendChild(image3);
 
@@ -64,12 +46,11 @@ const home = () => {
     discover.textContent = 'Discover the menu';
     sectionArrow.appendChild(discover);
     
-    let discoverButton = document.createElement('button');
+    let discoverButton = document.createElement('img');
     discoverButton.classList.add('discover-button');
-    discoverButton.textContent = 'Need image';
+
     sectionArrow.appendChild(discoverButton);
 
-    // create each times not what we want
     discoverButton.addEventListener('click', runMenu);
 }
 

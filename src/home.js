@@ -50,7 +50,6 @@ const home = () => {
     let discoverButton = document.createElement('img');
     discoverButton.src = imgArrow;
     discoverButton.classList.add('discover-button');
-
     sectionArrow.appendChild(discoverButton);
 
     discoverButton.addEventListener('click', runMenu);

@@ -1,8 +1,23 @@
-# restaurant-page
-JS / CSS
+# Korean restaurant website
+The project represents a website for a fictif korean restaurant.
+It displays the menu, the reservation form as well as a brief introduction.
 
-Big practice with webpack and npm
+## Goal
+The main goal is to create and manipulate the DOM without any HTML and practice webpack / npm
 
-Note: Always pseudo-code first
+## Credit
+[Images]()
 
-Live Preview: https://haveadream1.github.io/restaurant-page/
+## User flow
+
+## Preview
+[Yul, Korean restaurant](https://haveadream1.github.io/restaurant-page/)
+
+## TODO :
+Review name  
+Change layout  
+Review style  
+Add  
+   *Introduction  
+   *Menu  
+   *Reservation form  

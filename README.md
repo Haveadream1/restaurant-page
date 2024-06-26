@@ -18,6 +18,6 @@ Review name
 Change layout  
 Review style  
 Add  
-   *Introduction  
-   *Menu  
-   *Reservation form  
+	*Introduction  
+	*Menu  
+	*Reservation form  

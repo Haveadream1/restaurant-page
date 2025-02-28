@@ -1,5 +1,5 @@
-# Korean restaurant website
-The project represents a website for a fictif korean restaurant.
+# Asian restaurant website
+The project represents a website for a fictif asian restaurant.
 It displays the menu, the reservation form as well as a brief introduction.
 
 ## Goal
@@ -11,7 +11,7 @@ The main goal is to create and manipulate the DOM without any HTML and practice 
 ## User flow
 
 ## Preview
-[Yul, Korean restaurant](https://haveadream1.github.io/restaurant-page/)
+[Yul, Asian restaurant](https://haveadream1.github.io/restaurant-page/)
 
 ## TODO :
 Review name  

@@ -8,16 +8,16 @@ The main goal is to create and manipulate the DOM without any HTML and practice 
 ## Credit
 [Images]()
 
-## User flow
-
 ## Preview
 [Yul, Asian restaurant](https://haveadream1.github.io/restaurant-page/)
 
 ## TODO :
-Review name  
-Change layout  
-Review style  
-Add  
-	*Introduction  
-	*Menu  
-	*Reservation form  
+* Review name  
+* Change layout and grid
+* Review style  
+* Review class
+* Add  
+	* Introduction  
+	* Menu  
+	* Reservation form  
+	* Image credit

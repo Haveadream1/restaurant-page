@@ -14,9 +14,8 @@ const home = () => {
     homeHeader.appendChild(homeHeaderTitle);
 
     let homeHeaderText = document.createElement('p');
-    homeHeaderText.classList.add('home-header-text');
     homeHeaderText.textContent = 'at Yul restaurant';
-    homeHeaderTitle.appendChild(homeHeaderText);
+    homeHeader.appendChild(homeHeaderText);
 
     /* Main */
     let homeMain = document.createElement('main');
@@ -41,7 +40,6 @@ const home = () => {
     div.appendChild(homeFooter);
 
     let footerText = document.createElement('p');
-    footerText.classList.add('footer-text');
     footerText.textContent = 'Discover the menu';
     homeFooter.appendChild(footerText);
     
@@ -54,4 +52,3 @@ const home = () => {
 }
 
 export default home;
-

@@ -14,6 +14,7 @@ const home = () => {
     homeHeader.appendChild(homeHeaderTitle);
 
     let homeHeaderText = document.createElement('p');
+    homeHeaderText.classList.add('home-header-text');
     homeHeaderText.textContent = 'at Yul restaurant';
     homeHeaderTitle.appendChild(homeHeaderText);
 

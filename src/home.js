@@ -4,43 +4,40 @@ import arrowImage from "../dist/images/Vector.svg"
 const home = () => {
     let div = document.querySelector('#content');
 
-    let homePage = document.createElement('section');
-    homePage.classList.add('home-page');
-    div.appendChild(homePage);
-
-    let titleSection = document.createElement('section');
-    titleSection.classList.add('title-section');
-    homePage.appendChild(titleSection);
+    /* Header */
+    let homeHeader = document.createElement('header');
+    homeHeader.classList.add('home-header');
+    div.appendChild(homeHeader);
     
-    let titleH1 = document.createElement('h1');
-    titleH1.textContent = 'Reserve your table for tonight';
-    titleH1.classList.add('title-h1');
-    titleSection.appendChild(titleH1);
+    let homeHeaderTitle = document.createElement('h1');
+    homeHeaderTitle.textContent = 'Discover the different taste of Asian cuisine';
+    homeHeader.appendChild(homeHeaderTitle);
 
-    let titleText = document.createElement('p');
-    titleText.classList.add('title-text');
-    titleText.textContent = 'See more';
-    titleSection.appendChild(titleText);
+    let homeHeaderText = document.createElement('p');
+    homeHeaderText.textContent = 'at Yul restaurant';
+    homeHeaderTitle.appendChild(homeHeaderText);
 
-    let imageSection = document.createElement('section');
-    imageSection.classList.add('image-section');
-    homePage.appendChild(imageSection);
+    /* Main */
+    let homeMain = document.createElement('main');
+    homeMain.classList.add('home-main');
+    div.appendChild(homeMain);
 
     let image1 = document.createElement('img');
     image1.classList.add('image-1');
-    imageSection.appendChild(image1);
+    homeMain.appendChild(image1);
 
     let image2 = document.createElement('img');
     image2.classList.add('image-2');
-    imageSection.appendChild(image2);
+    homeMain.appendChild(image2);
 
     let image3 = document.createElement('img');
     image3.classList.add('image-3');
-    imageSection.appendChild(image3);
+    homeMain.appendChild(image3);
 
+    /* Footer */
     let homeFooter = document.createElement('footer');
     homeFooter.classList.add('home-footer');
-    homePage.appendChild(homeFooter);
+    div.appendChild(homeFooter);
 
     let footerText = document.createElement('p');
     footerText.classList.add('footer-text');
@@ -56,3 +53,4 @@ const home = () => {
 }
 
 export default home;
+

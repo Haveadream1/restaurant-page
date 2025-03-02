@@ -4,24 +4,25 @@ body {
     padding:0;
 }
 
-.grid-home {
+/* Home page */
+.home-page {
     background-color: rgba(242, 184, 164, 0.42);
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 725px 180px;
 }
-.title {
+.title-section {
     grid-row: 1;
     min-width: 350px;
     padding: 20px;
 }
-.title-home,
+.title-h1,
 .title-menu {
     font-size: 40px;
     font-weight: lighter;
     margin-bottom: 0;
 }
-.image {
+.image-section {
     grid-row: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -54,7 +55,7 @@ body {
     height: 210px;
 }
 
-.arrow {
+.home-footer {
     color: #E3DED9;
     position: static;
     width: 100%;
@@ -67,7 +68,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.discover-button {
+.menu-button {
     content: url("../dist/images/Vector.svg");
     width: 50px;
     height: 50px;

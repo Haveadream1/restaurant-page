@@ -1,58 +1,58 @@
-import runMenu from "./menu";
-import imgArrow from "../dist/images/Vector.svg"
+import loadMenu from "./menu";
+import arrowImage from "../dist/images/Vector.svg"
 
 const home = () => {
     let div = document.querySelector('#content');
 
-    let sectionHome = document.createElement('section');
-    sectionHome.classList.add('grid-home');
-    div.appendChild(sectionHome);
+    let homePage = document.createElement('section');
+    homePage.classList.add('home-page');
+    div.appendChild(homePage);
 
-    let sectionTitle = document.createElement('section');
-    sectionTitle.classList.add('title');
-    sectionHome.appendChild(sectionTitle);
+    let titleSection = document.createElement('section');
+    titleSection.classList.add('title-section');
+    homePage.appendChild(titleSection);
     
-    let titleHome = document.createElement('h1');
-    titleHome.textContent = 'Reserve your table for tonight';
-    titleHome.classList.add('title-home');
-    sectionTitle.appendChild(titleHome);
+    let titleH1 = document.createElement('h1');
+    titleH1.textContent = 'Reserve your table for tonight';
+    titleH1.classList.add('title-h1');
+    titleSection.appendChild(titleH1);
 
-    let seeMore = document.createElement('p');
-    seeMore.classList.add('see-more');
-    seeMore.textContent = 'See more';
-    sectionTitle.appendChild(seeMore);
+    let titleText = document.createElement('p');
+    titleText.classList.add('title-text');
+    titleText.textContent = 'See more';
+    titleSection.appendChild(titleText);
 
-    let sectionImage = document.createElement('section');
-    sectionImage.classList.add('image');
-    sectionHome.appendChild(sectionImage);
+    let imageSection = document.createElement('section');
+    imageSection.classList.add('image-section');
+    sectionHome.appendChild(imageSection);
 
     let image1 = document.createElement('img');
     image1.classList.add('image-1');
-    sectionImage.appendChild(image1);
+    imageSection.appendChild(image1);
 
     let image2 = document.createElement('img');
     image2.classList.add('image-2');
-    sectionImage.appendChild(image2);
+    imageSection.appendChild(image2);
 
     let image3 = document.createElement('img');
     image3.classList.add('image-3');
-    sectionImage.appendChild(image3);
+    imageSection.appendChild(image3);
 
-    let sectionArrow = document.createElement('footer');
-    sectionArrow.classList.add('arrow');
-    sectionHome.appendChild(sectionArrow);
+    let homeFooter = document.createElement('footer');
+    homeFooter.classList.add('home-footer');
+    homePage.appendChild(homeFooter);
 
-    let discover = document.createElement('p');
-    discover.classList.add('discover');
-    discover.textContent = 'Discover the menu';
-    sectionArrow.appendChild(discover);
+    let footerText = document.createElement('p');
+    footerText.classList.add('footer-text');
+    footerText.textContent = 'Discover the menu';
+    homeFooter.appendChild(footerText);
     
-    let discoverButton = document.createElement('img');
-    discoverButton.src = imgArrow;
-    discoverButton.classList.add('discover-button');
-    sectionArrow.appendChild(discoverButton);
+    let menuButton = document.createElement('img');
+    menuButton.src = arrowImage;
+    menuButton.classList.add('menu-button');
+    homeFooter.appendChild(menuButton);
 
-    discoverButton.addEventListener('click', runMenu);
+    menuButton.addEventListener('click', loadMenu);
 }
 
 export default home;

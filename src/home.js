@@ -24,7 +24,7 @@ const home = () => {
 
     let imageSection = document.createElement('section');
     imageSection.classList.add('image-section');
-    sectionHome.appendChild(imageSection);
+    homePage.appendChild(imageSection);
 
     let image1 = document.createElement('img');
     image1.classList.add('image-1');

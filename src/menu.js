@@ -8,8 +8,8 @@ const menu = () => {
     div.removeChild(homePage);
 
     let menuPage = document.createElement('section');
-    sectionMenu.classList.add('menu-page');
-    div.appendChild(sectionMenu);
+    menuPage.classList.add('menu-page');
+    div.appendChild(menuPage);
 
     let titleMenu = document.createElement('h1');
     titleMenu.textContent = 'Weekly menu';

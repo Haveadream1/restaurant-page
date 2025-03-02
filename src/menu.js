@@ -74,7 +74,6 @@ const menu = () => {
 
     let titleFooter = document.createElement('p');
     titleFooter.textContent = 'Contact info';
-    titleFooter.classList.add('title-footer');
     menuFooter.appendChild(titleFooter);
     
     let infoSection = document.createElement('section');

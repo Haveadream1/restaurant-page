@@ -1,87 +1,84 @@
-import runHome from "./home";
-import imgHome from "../dist/images/Vector\ \(1\).svg";
+import loadHome from "./home";
+import homeImage from "../dist/images/Vector\ \(1\).svg";
 
 const menu = () => {
     let div = document.querySelector('#content');
 
-    let sectionMenu = document.createElement('section');
-    sectionMenu.classList.add('menu');
+    let homePage = document.querySelector('.home-page');
+    div.removeChild(homePage);
+
+    let menuPage = document.createElement('section');
+    sectionMenu.classList.add('menu-page');
     div.appendChild(sectionMenu);
 
     let titleMenu = document.createElement('h1');
     titleMenu.textContent = 'Weekly menu';
     titleMenu.classList.add('title-menu');
-    sectionMenu.appendChild(titleMenu);
+    menuPage.appendChild(titleMenu);
 
-    let returnHome = document.createElement('img');
-    returnHome.src = imgHome;
-    returnHome.classList.add('return-home');
-    sectionMenu.appendChild(returnHome);
+    let homeButton = document.createElement('img');
+    homeButton.src = homeImage;
+    homeButton.classList.add('home-button');
+    menuPage.appendChild(homeButton);
 
-    returnHome.addEventListener('click', function() {
-        div.removeChild(sectionMenu);
-        runHome();
-    })
+    homeButton.addEventListener('click', loadHome);
 
-    let sectionImageMenu = document.createElement('section');
-    sectionImageMenu.classList.add('image-menu');
-    sectionMenu.appendChild(sectionImageMenu);
+    let imageSectionMenu = document.createElement('section');
+    imageSectionMenu.classList.add('image-section-menu');
+    menuPage.appendChild(imageSectionMenu);
 
     let plate1 = document.createElement('p');
     plate1.textContent = 'Pad Thai - 11$';
-    plate1.classList.add('plate1');
-    sectionImageMenu.appendChild(plate1);
+    plate1.classList.add('plate-1');
+    imageSectionMenu.appendChild(plate1);
 
     /* ready if i want to add img
     let img1 = document.createElement('img');
     img1.classList.add('img1');
-    sectionImageMenu.appendChild(img1);*/
+    imageSectionMenu.appendChild(img1);*/
 
     let plate2 = document.createElement('p');
     plate2.textContent = 'Korean BBQ - 15$';
-    plate2.classList.add('plate2');
-    sectionImageMenu.appendChild(plate2);
+    plate2.classList.add('plate-2');
+    imageSectionMenu.appendChild(plate2);
 
     let plate3 = document.createElement('p');
     plate3.textContent = 'Udon - 14$';
-    plate3.classList.add('plate3');
-    sectionImageMenu.appendChild(plate3);
+    plate3.classList.add('plate-3');
+    imageSectionMenu.appendChild(plate3);
 
     let plate4 = document.createElement('p');
     plate4.textContent = 'Pekin Duck - 18$';
-    plate4.classList.add('plate4');
-    sectionImageMenu.appendChild(plate4);
+    plate4.classList.add('plate-4');
+    imageSectionMenu.appendChild(plate4);
 
-    let sectionBottom = document.createElement('footer');
-    sectionBottom.classList.add('bottom')
-    sectionMenu.appendChild(sectionBottom);
+    let menuFooter = document.createElement('footer');
+    menuFooter.classList.add('menu-footer')
+    menuPage.appendChild(menuFooter);
 
     let titleFooter = document.createElement('p');
     titleFooter.textContent = 'Contact info';
     titleFooter.classList.add('title-footer');
-    sectionBottom.appendChild(titleFooter);
+    menuFooter.appendChild(titleFooter);
     
-    let alignFooter = document.createElement('section');
-    alignFooter.classList.add('align-footer');
-    sectionBottom.appendChild(alignFooter);
+    let infoSection = document.createElement('section');
+    infoSection.classList.add('info-section');
+    menuFooter.appendChild(infoSection);
 
-    let gmail  = document.createElement('p');
-    gmail.textContent = '1234@gmail.com';
-    gmail.classList.add('gmail');
-    alignFooter.appendChild(gmail);
+    let gmailText = document.createElement('p');
+    gmailText.textContent = '1234@gmail.com';
+    gmailText.classList.add('gmail-text');
+    infoSection.appendChild(gmailText);
 
-    let phoneNum  = document.createElement('p');
+    let phoneNum = document.createElement('p');
     phoneNum.textContent = '+050 250 8541';
     phoneNum.classList.add('phone-num');
-    alignFooter.appendChild(phoneNum);
+    infoSection.appendChild(phoneNum);
 
-    let address  = document.createElement('p');
-    address.textContent = '36 Road, 152 ExCity, JPN';
-    address.classList.add('address');
-    alignFooter.appendChild(address);
-
-    let removeHome = document.querySelector('.grid-home');
-    div.removeChild(removeHome);
+    let addressText = document.createElement('p');
+    addressText.textContent = '36 Road, 152 ExCity, JPN';
+    addressText.classList.add('address-text');
+    infoSection.appendChild(addressText);
 }
 
 export default menu;

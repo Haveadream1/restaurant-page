@@ -21,7 +21,13 @@ const menu = () => {
     homeButton.classList.add('home-button');
     menuPage.appendChild(homeButton);
 
-    homeButton.addEventListener('click', loadHome);
+    homeButton.addEventListener('click', () => {
+        let menuPage = document.querySelector('.menu-page');
+        div.removeChild(menuPage);
+
+        loadHome();
+    });
+
 
     let imageSectionMenu = document.createElement('section');
     imageSectionMenu.classList.add('image-section-menu');

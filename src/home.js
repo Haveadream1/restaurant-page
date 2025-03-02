@@ -4,9 +4,6 @@ import arrowImage from "../dist/images/Vector.svg"
 const home = () => {
     let div = document.querySelector('#content');
 
-    let menuPage = document.querySelector('.menu-page');
-    div.removeChild(menuPage);
-
     let homePage = document.createElement('section');
     homePage.classList.add('home-page');
     div.appendChild(homePage);

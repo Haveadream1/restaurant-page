@@ -15,13 +15,5 @@ The main goal is to create and manipulate the DOM without any HTML and practice 
 ## Preview
 [Yul, Asian restaurant](https://haveadream1.github.io/restaurant-page/)
 
-## TODO :
-* Review name  
-* Change layout and grid
-* Review style  
-* Review class
-* Add  
-	* Introduction  
-	* Menu  
-	* Reservation form  
-	* Image credit
+## Note :
+* The svg images are the one in the images folder that have been loaded with webpack
